@@ -139,7 +139,7 @@ class CatUserBotClient(TelegramClient):
                         ftext += result
                         pastelink = paste_text(ftext, markdown=False)
                         text = "**هنالك خطأ في بوت القـط**\n\n"
-                        link = "[هـنا](https://t.me/RRRD7)"
+                        link = "[هـنا](https://t.me/narokya)"
                         text += "اذا واجهتك مشكله فقط قم بالتبليغ"
                         text += f"- فقط قم بتوجيه الرسالة {link}.\n"
                         text += (
@@ -253,7 +253,7 @@ class CatUserBotClient(TelegramClient):
                         ftext += result
                         pastelink = paste_text(ftext, markdown=False)
                         text = "**هنالك خطأ في بوت القـط**\n\n"
-                        link = "[هـنا](https://t.me/RRRD7)"
+                        link = "[هـنا](https://t.me/narokya)"
                         text += "اذا واجهتك مشكله فقط قم بالتبليغ"
                         text += f"- فقط قم بتوجيه الرسالة {link}.\n"
                         text += (
