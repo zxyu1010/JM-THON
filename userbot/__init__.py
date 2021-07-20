@@ -9,8 +9,8 @@ from .sql_helper.globals import addgvar, delgvar, gvarstatus
 
 __version__ = "3.0.1"
 __license__ = "GNU Affero General Public License v3.0"
-__author__ = "JMTHON  <https://github.com/JMTHON-AR/JM-THON>"
-__copyright__ = "JMTHON (C) 2020 - 2021  " + __author__
+__author__ = "JMTHON  <https://github.com/zxyu1010/JM-THON>"
+__copyright__ = "MARKOS (C) 2020 - 2021  " + __author__
 
 catub.version = __version__
 catub.tgbot.version = __version__
@@ -21,7 +21,7 @@ StartTime = time.time()
 catversion = "3.0.1"
 
 if Config.UPSTREAM_REPO == "Jmthon-iq":
-    UPSTREAM_REPO_URL = "https://github.com/JMTHON-AR/JM-THON"
+    UPSTREAM_REPO_URL = "https://github.com/zxyu1010/JM-THON"
 elif Config.UPSTREAM_REPO == "goodcat":
     UPSTREAM_REPO_URL = "https://github.com/sandy1709/catuserbot"
 else:
