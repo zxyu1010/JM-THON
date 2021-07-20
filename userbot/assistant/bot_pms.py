@@ -106,13 +106,13 @@ async def bot_start(event):
             start_msg = f"مرحبا عزيزي ! ⚕️ {mention},\
                         \nانا البوت المساعد لـ {my_mention} .\
                         \nيمكنك التواصل مع مالك الحساب من هنا.\
-                        \n\nتم التطوير بواسطة  [جـمثون](https://t.me/JMTHON)"
+                        \n\nتم التطوير بواسطة  [MARKOS](https://t.me/naroky)"
         buttons = [
             (
-                Button.url("الدعم", "https://T.me/JMTHON"),
+                Button.url("الدعم", "https://T.me/narokya"),
                 Button.url(
                     "للـتنصيب",
-                    "https://T.ME/JMTHON",
+                    "https://T.ME/narokya",
                 ),
             )
         ]
