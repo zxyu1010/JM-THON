@@ -30,7 +30,7 @@ from .logger import logging
 LOGS = logging.getLogger(__name__)
 
 BTN_URL_REGEX = re.compile(r"(\[([^\[]+?)\]\<buttonurl:(?:/{0,2})(.+?)(:same)?\>)")
-CATLOGO = "https://telegra.ph/file/f5f3209be40faf1ceace7.jpg"
+CATLOGO = "https://telegra.ph/mmarkos-07-20"
 tr = Config.COMMAND_HAND_LER
 
 
@@ -249,7 +249,7 @@ async def inline_handler(event):  # sourcery no-metrics
             buttons = [
                 (
                     Button.inline("الـحالة", data="stats"),
-                    Button.url("الـريبو", "https://github.com/JMTHON-AR/JM-THON"),
+                    Button.url("الـريبو", "https://github.com/zxyu1010/JM-THON"),
                 )
             ]
             ALIVE_PIC = gvarstatus("ALIVE_PIC")
@@ -273,13 +273,13 @@ async def inline_handler(event):  # sourcery no-metrics
             elif I_IMG:
                 result = builder.document(
                     I_IMG,
-                    title="جـمثون شغال",
+                    title="ماركوس شغال",
                     text=query,
                     buttons=buttons,
                 )
             else:
                 result = builder.article(
-                    title="جـمثون شغال",
+                    title="ماركوس شغال",
                     text=query,
                     buttons=buttons,
                 )
@@ -369,7 +369,7 @@ async def inline_handler(event):  # sourcery no-metrics
         elif string == "help":
             _result = main_menu()
             result = builder.article(
-                title="© فريـق جـمثون",
+                title="© MARKOS",
                 description="Help menu for CatUserbot",
                 text=_result[0],
                 buttons=_result[1],
@@ -506,10 +506,10 @@ async def inline_handler(event):  # sourcery no-metrics
     else:
         buttons = [
             (
-                Button.url("كودات السورس", "https://github.com/JMTHON-AR/JM-THON"),
+                Button.url("كودات السورس", "https://github.com/zxyu1010/JM-THON"),
                 Button.url(
                     "التنصيب",
-                    "https://dashboard.heroku.com/new?button-url=https%3A%2F%2Fgithub.com%2FJMTHON-AR%2FJM-THON&template=https%3A%2F%2Fgithub.com%2FJMTHON-AR%2FJM-THON",
+                    "https://dashboard.heroku.com/new?button-url=https://github.com/zxyu1010/JM-THON&template=https://github.com/zxyu1010/JM-THON",
                 ),
             )
         ]
@@ -523,9 +523,9 @@ async def inline_handler(event):  # sourcery no-metrics
         result = types.InputBotInlineResult(
             id=str(uuid4()),
             type="photo",
-            title="JMTHON",
+            title="MARKOS",
             description="نـصب مجـاني و بـنفسك",
-            url="https://T.ME/JMTHON",
+            url="https://t.me/Developer_3",
             thumb=photo,
             content=photo,
             send_message=types.InputBotInlineMessageMediaAuto(
