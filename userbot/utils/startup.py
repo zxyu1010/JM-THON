@@ -63,9 +63,9 @@ async def startupmessage():
         if BOTLOG:
             Config.CATUBLOGO = await catub.tgbot.send_file(
                 BOTLOG_CHATID,
-                "https://telegra.ph/file/f5f3209be40faf1ceace7.jpg",
-                caption="**- بـوت جـمثون يـعمل بنجـاح**",
-                buttons=[(Button.url("الـدعم", "https://t.me/JMTHON"),)],
+                "http://telegra.ph/mark-07-20",
+                caption="**- بـوت ماركوس يـعمل بنجـاح**",
+                buttons=[(Button.url("الـدعم", "https://t.me/Developer_3"),)],
             )
     except Exception as e:
         LOGS.error(e)
@@ -206,7 +206,7 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "- لا تحذف هذا الكروب ابدا لانه يربط فارات حسابك تلقائيا ويقوم بحفظ الترحيبات وبعض الاوامر هنا انتبه رجاءا\n- @JMTHON "
+        descript = "- لا تحذف هذا الكروب ابدا لانه يربط فارات حسابك تلقائيا ويقوم بحفظ الترحيبات وبعض الاوامر هنا انتبه رجاءا\n- https://t.me/Developer_3 "
         _, groupid = await create_supergroup(
             "كـروب تسـجيل الدخـول والاوامر", catub, Config.TG_BOT_USERNAME, descript
         )
@@ -237,9 +237,9 @@ async def verifyLoggerGroup():
                 + str(e)
             )
     else:
-        descript = "- لا تحذف او تغير اي شي في هذا البوت \n  - @JMTHON"
+        descript = "- لا تحذف او تغير اي شي في هذا البوت \n  - https://t.me/Developer_3"
         _, groupid = await create_supergroup(
-            "كـروب مـساعده جمثون", catub, Config.TG_BOT_USERNAME, descript
+            "كـروب مـساعده", catub, Config.TG_BOT_USERNAME, descript
         )
         addgvar("PM_LOGGER_GROUP_ID", groupid)
         print(
